@@ -17,7 +17,7 @@ const OpenWeather = ({ location }) => {
         const openApiCall = async () => {
             const now = new Date();
 
-            const baseUrl = 'http://api.openweathermap.org/data/2.5/forecast?';
+            const baseUrl = 'https://api.openweathermap.org/data/2.5/forecast?';
             const API_key = '3799e0bfa8922d8c820dec07024247aa';
 
             const nx = parseFloat(location.latitude).toFixed(2);
@@ -53,7 +53,7 @@ const OpenWeather = ({ location }) => {
 
     const image = () => {
         if (description === '맑음') {
-            return 'http://photo.sentv.co.kr/photo/2019/10/16/20191016083501.jpg';
+            return 'https://photo.sentv.co.kr/photo/2019/10/16/20191016083501.jpg';
         } else if (description === '온흐림') {
             return 'https://image.imnews.imbc.com/news/2020/society/article/__icsFiles/afieldfile/2020/08/12/jin200812-24.jpg';
         } else
